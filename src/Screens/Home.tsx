@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Button,
-  FlatList,
-  ActivityIndicator,
-  StyleSheet,
-} from 'react-native';
+import {View, FlatList, ActivityIndicator, StyleSheet} from 'react-native';
 
 import Product from '../Components/Product';
 import {useAppDispatch, useAppSelector} from '../Redux/store';
@@ -32,6 +26,7 @@ const Home = ({navigation}: any) => {
         <ActivityIndicator />
       ) : (
         <FlatList
+          bounces={false}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.contentContainerStyle}
           renderItem={renderItem}
@@ -48,6 +43,7 @@ export default Home;
 const styles = StyleSheet.create({
   contentContainerStyle: {
     paddingVertical: 40,
+    backgroundColor: '#fff',
   },
   seperator: {
     backgroundColor: '#fff',

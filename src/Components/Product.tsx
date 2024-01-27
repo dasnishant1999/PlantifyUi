@@ -66,7 +66,6 @@ export default Product;
 
 const styles = StyleSheet.create({
   outerConatiner: {
-    backgroundColor: 'red',
     justifyContent: 'space-between',
     flexDirection: 'row',
     width: Dimensions.get('window').width - 20,

@@ -20,7 +20,6 @@ const ProductDetails = ({route}) => {
     bio,
     image,
   } = productDetails;
-  console.log(category);
 
   // eslint-disable-next-line react/no-unstable-nested-components
   const Rating = () => {
